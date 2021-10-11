@@ -33,13 +33,12 @@ exports.getId = async (req, res) => {
 exports.post = async (req, res) => {
   try {
     const { name } = req.body;
-    const newDepartment = new Department({ name });
+    const newDepartment = new Department({ name: name });
     await newDepartment.save();
-    res.json({ message: 'Ok'});
-}
-catch(err) {
+    res.json({ message: "OK" });
+  } catch (err) {
     res.status(500).json({ message: err });
-}
+  }
 };
 
 exports.putId = async (req, res) => {
