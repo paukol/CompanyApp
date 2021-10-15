@@ -17,6 +17,6 @@
     "mongodb": "3.3.2",
     "mongoose": "5.7.1",
     "nodemon": "^2.0.13",
-    "onchange": "6.1.0"
+    "onchange": "6.1.1"
   }
 }
